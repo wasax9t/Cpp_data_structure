@@ -47,3 +47,45 @@ void BinNode<T>::travIn(VST &visit)
 		default:travIn_R(this, visit); break;
 	}
 }
+
+template<typename T>
+template<typename VST>
+void BinNode<T>::travLevel(VST &visit)
+{
+	switch (rand() % 5)
+	{
+	case 1:travLe_L1(this, visit); break;
+	case 2:travLe_L2(this, visit); break;
+	case 3:travLe_L3(this, visit); break;
+	case 4:travLe_L4(this, visit); break;
+	default:travLe_R(this, visit); break;
+	}
+}
+
+template<typename T>
+template<typename VST>
+void BinNode<T>::travPre(VST &visit)
+{
+	switch (rand() % 5)
+	{
+	case 1:travPre_1(this, visit); break;
+	case 2:travPre_2(this, visit); break;
+	case 3:travPre_3(this, visit); break;
+	case 4:travPre_4(this, visit); break;
+	default:travPre_R(this, visit); break;
+	}
+}
+
+template<typename T>
+template<typename VST>
+void BinNode<T>::travPost(VST &visit)
+{
+	switch (rand() % 5)
+	{
+	case 1:travPost_1(this, visit); break;
+	case 2:travPost_2(this, visit); break;
+	case 3:travPost_3(this, visit); break;
+	case 4:travPost_4(this, visit); break;
+	default:travPost_R(this, visit); break;
+	}
+}
