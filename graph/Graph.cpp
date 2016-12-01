@@ -1,5 +1,15 @@
 #include"Graph.h"
-#include"..\stack&queue\Stack.h"
+
+
+template<typename Tv, typename Te>
+inline void Graph<Tv, Te>::reset() {
+	for (int i = 0; i < n; i++) {
+		status(i) = UNDISCOVERED; dTime(i) = fTime(i) = -1;
+		parent(i) = -1; priority(i) = INT_MAX;
+		for (int j = 0; j < n; j++)
+			if (exists(i, j))type(i, j) = UNDETERMINED;
+	}
+}
 
 template<typename Tv,typename Te>
 void Graph<Tv, Te>::bfs(int s) {//广度优先搜索算法BFS（全图）

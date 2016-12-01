@@ -21,6 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4E121525-57D4-449C-9484-50C27F29ADE6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -99,7 +100,6 @@
   <ItemGroup>
     <ClCompile Include="bintree\BinNode.cpp" />
     <ClCompile Include="bintree\BinTree.cpp" />
-    <ClCompile Include="bintree\PFC.cpp" />
     <ClCompile Include="graph\Graph.cpp" />
     <ClCompile Include="list\List.cpp" />
     <ClCompile Include="list\ListNode.cpp" />

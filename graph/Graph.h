@@ -1,24 +1,20 @@
 #pragma once
+#include"..\stack&queue\Stack.h"
 typedef enum { UNDISCOVERED, DISCOVERED, VISITED } VStatus;
 typedef enum { UNDETERMINED, TREE, CROSS, FORWARD, BACKWORD } EType;
 
 template<typename Tv, typename Te>
 class Graph {
 private:
-	void reset() {
-		for (int i = 0; i < n; i++) {
-			status(i) = UNDISCOVERED; dTime(i) = fTime(i) = -1;
-			parent(i) = -1; priority(i) = INT_MAX;
-			for (int j = 0; j < n; j++)
-				if (exists(i, j))type(i, j) = UNDETERMINED;
-		}
-	}
+	void reset();
 	void bfs(int s);
 	
 	void dfs(int s);
 	
 	Stack<Tv>* tSort(int s);
 	bool TSort(int v, int & clock, Stack<Tv>* S);
+
+	void bbc(int s);
 	
 public:
 	int n;//vertex count

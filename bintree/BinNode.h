@@ -26,19 +26,19 @@ template <typename T> struct BinNode
 	int height;
 	int npl;//Null Path Length左右堆
 	RBColor color;
-
+	//构造函数
 	BinNode() :parent(NULL), lc(NULL), rc(NULL), height(0), npl(1), color(RB_RED) {}
-	BinNode()(T e, BNPosi(T) p = NULL,BNPosi(T) lc=NULL,BNPosi(T) rc=NULL,int h=0,int l=1.RBColor c=RB_RED):
-		data(e), parent(p), lc(lc), rc(rc), height(h), npl(l), color(RB_RED){}
+	BinNode(T e, BNPosi(T) p = NULL, BNPosi(T) lc = NULL, BNPosi(T) rc = NULL, int h = 0, int l = 1, RBColor c = RB_RED):
+		data(e), parent(p), lc(lc), rc(rc), height(h), npl(l), color(c){}
 
 	int size();
 	BNPosi(T) insertAsLc(T const&);
 	BNPosi(T) insertAsRc(T const&);
 	BNPosi(T) succ();
-	template <template VST> void travLevel(VST&);//子树层次遍历
-	template <template VST> void travPre(VST&);//子树先序遍历
-	template <template VST> void travIn(VST&);//子树中序遍历
-	template <template VST> void travPost(VST&);//子树后序遍历
+	template <typename VST> void travLevel(VST&);//子树层次遍历
+	template <typename VST> void travPre(VST&);//子树先序遍历
+	template <typename VST> void travIn(VST&);//子树中序遍历
+	template <typename VST> void travPost(VST&);//子树后序遍历
 
 	bool operator< (BinNode const& bn) { return data < bn.data; }
 	bool operator== (BinNode const& bn) { return data == bn.data; }

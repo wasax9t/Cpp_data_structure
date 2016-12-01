@@ -1,4 +1,5 @@
 #include"BinTree.h"
+#include"..\stack&queue\Stack.h"
 
 template<typename T>
 int BinTree<T>::updateHeight(BNPosi(T) x)
