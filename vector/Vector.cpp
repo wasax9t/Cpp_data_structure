@@ -1,6 +1,5 @@
 #include<iostream>
 #include<cstring>
-#include"..\Fib.h"
 #include"Vector.h"
 using namespace std;
 typedef int Rank;//÷»

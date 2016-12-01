@@ -1,7 +1,7 @@
 #pragma once
 #include<iostream>
 #include<cstring>
-#include"Fib.h"
+#include"..\Fib.h"
 using namespace std;
 typedef int Rank;//÷»
 #define DEFAUL_CAPACITY 3//ƒ¨»œ≥ı º»›¡ø

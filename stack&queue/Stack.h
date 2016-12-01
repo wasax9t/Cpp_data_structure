@@ -1,9 +1,10 @@
 #pragma once
-#include "Vector.h"
+#include "..\vector\Vector.h"
 
 template <typename T> class Stack :public Vector<T> {
-public:
-	void push(T const& e) { insert(size(), e); }//入栈
-	T pop() { return remove(size() - 1); }
-	T& top() { return (*this)[size() - 1]; }
+public://size(),empty()等其他开放接口，均可直接沿用
+	void push(T const& e);//入栈
+	T pop();//出栈
+	T& top();//读取栈顶
 };
+

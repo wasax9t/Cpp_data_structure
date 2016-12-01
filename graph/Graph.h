@@ -13,10 +13,17 @@ private:
 				if (exists(i, j))type(i, j) = UNDETERMINED;
 		}
 	}
-	void BFS(int, int&);
-	void DFS(int, int&);
-	void BCC(int, int&, Stack<Tv>*);
+	void bfs(int s);
+	
+	void dfs(int s);
+	
+	Stack<Tv>* tSort(int s);
+	bool TSort(int v, int & clock, Stack<Tv>* S);
+	
 public:
 	int n;//vertex count
 	int e;//edge count
+	void BFS(int, int&);
+	void DFS(int, int&);
+	void BCC(int, int&, Stack<Tv>*);
 };

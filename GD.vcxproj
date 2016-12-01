@@ -97,12 +97,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bintree\BinNode.cpp" />
+    <ClCompile Include="bintree\BinTree.cpp" />
     <ClCompile Include="bintree\PFC.cpp" />
     <ClCompile Include="graph\Graph.cpp" />
     <ClCompile Include="list\List.cpp" />
     <ClCompile Include="list\ListNode.cpp" />
     <ClCompile Include="stack&amp;queue\Queue.cpp" />
-    <ClCompile Include="vector\Vector.cpp" />
+    <ClCompile Include="stack&amp;queue\Stack.cpp" />
+    <ClCompile Include="vector\Vector.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bintree\BinNode.h" />
