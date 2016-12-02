@@ -45,6 +45,9 @@
     <ClCompile Include="searchTree&amp;pro\AVL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="searchTree&amp;pro\Splay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fib.h">
@@ -81,6 +84,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="searchTree&amp;pro\AVL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTree&amp;pro\Splay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
