@@ -103,6 +103,8 @@
     <ClCompile Include="graph\Graph.cpp" />
     <ClCompile Include="list\List.cpp" />
     <ClCompile Include="list\ListNode.cpp" />
+    <ClCompile Include="searchTree&amp;pro\AVL.cpp" />
+    <ClCompile Include="searchTree&amp;pro\BST.cpp" />
     <ClCompile Include="stack&amp;queue\Queue.cpp" />
     <ClCompile Include="stack&amp;queue\Stack.cpp" />
     <ClCompile Include="vector\Vector.cpp">
@@ -116,6 +118,9 @@
     <ClInclude Include="graph\Graph.h" />
     <ClInclude Include="list\List.h" />
     <ClInclude Include="list\ListNode.h" />
+    <ClInclude Include="searchTree&amp;pro\AVL.h" />
+    <ClInclude Include="searchTree&amp;pro\BST.h" />
+    <ClInclude Include="searchTree&amp;pro\Entry.h" />
     <ClInclude Include="stack&amp;queue\Queue.h" />
     <ClInclude Include="stack&amp;queue\Stack.h" />
     <ClInclude Include="vector\Vector.h" />

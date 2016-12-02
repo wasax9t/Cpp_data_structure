@@ -39,6 +39,12 @@
     <ClCompile Include="bintree\BinTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="searchTree&amp;pro\BST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="searchTree&amp;pro\AVL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fib.h">
@@ -66,6 +72,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="vector\Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTree&amp;pro\Entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTree&amp;pro\BST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTree&amp;pro\AVL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
