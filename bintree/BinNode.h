@@ -14,7 +14,7 @@ typedef	enum { RB_RED, RB_BLACK } RBColor;
 #define Isleaf(x) (!HasChild(x))
 
 #define sibling(p) ( IsLChild(*(p))?(p)->parent->rc:(p)->parent->lc)
-#define uncle(x) ( IsLChild(*((x)->parent))?(x)->parent->parent->rc:(x)->parent->parent->lc)
+#define uncle(x) ( IsLChild(*((x)->parent)) ? (x)->parent->parent->rc : (x)->parent->parent->lc)
 #define FromParentTo(x) (IsRoot(x)?_root:(IsLChild(x)?(x).parent->rc:(x).parent->lc))
 
 template <typename T> struct BinNode

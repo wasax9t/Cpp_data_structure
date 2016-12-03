@@ -70,7 +70,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -79,7 +79,7 @@
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -103,8 +103,11 @@
     <ClCompile Include="graph\Graph.cpp" />
     <ClCompile Include="list\List.cpp" />
     <ClCompile Include="list\ListNode.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="searchTree&amp;pro\AVL.cpp" />
     <ClCompile Include="searchTree&amp;pro\BST.cpp" />
+    <ClCompile Include="searchTree&amp;pro\BTree.cpp" />
+    <ClCompile Include="searchTree&amp;pro\RedBlack.cpp" />
     <ClCompile Include="searchTree&amp;pro\Splay.cpp" />
     <ClCompile Include="stack&amp;queue\Queue.cpp" />
     <ClCompile Include="stack&amp;queue\Stack.cpp" />
@@ -121,7 +124,10 @@
     <ClInclude Include="list\ListNode.h" />
     <ClInclude Include="searchTree&amp;pro\AVL.h" />
     <ClInclude Include="searchTree&amp;pro\BST.h" />
+    <ClInclude Include="searchTree&amp;pro\BTNode.h" />
+    <ClInclude Include="searchTree&amp;pro\BTree.h" />
     <ClInclude Include="searchTree&amp;pro\Entry.h" />
+    <ClInclude Include="searchTree&amp;pro\RedBlack.h" />
     <ClInclude Include="searchTree&amp;pro\Splay.h" />
     <ClInclude Include="stack&amp;queue\Queue.h" />
     <ClInclude Include="stack&amp;queue\Stack.h" />

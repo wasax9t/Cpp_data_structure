@@ -48,6 +48,15 @@
     <ClCompile Include="searchTree&amp;pro\Splay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="searchTree&amp;pro\BTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="searchTree&amp;pro\RedBlack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fib.h">
@@ -87,6 +96,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="searchTree&amp;pro\Splay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTree&amp;pro\BTNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTree&amp;pro\BTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTree&amp;pro\RedBlack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

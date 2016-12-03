@@ -50,14 +50,14 @@ inline BNPosi(T) BinTree<T>::attachAsRC(BNPosi(T) x, BinTree<T>*& T) {
 }
 
 template<typename T>
-inline int BinTree<T>::remove(BNPosi(T) x) {//返回x子树规模
+int BinTree<T>::remove(BNPosi(T) x) {//返回x子树规模
 	FromParentTo(*x) = NULL;//切断父节点的指针
 	updateHeightAbove(x - parent);
 	int n = removeAt(x); _size -= n; return n;
 }
 
 template<typename T>
-inline int BinTree<T>::removeAt(BNPosi(T) x) {
+int BinTree<T>::removeAt(BNPosi(T) x) {
 	if (!x) return 0;
 	int n = 1 + removeAt(x->lc) + removeAt(x->rc);
 	release(x->data); release(x);
@@ -65,7 +65,7 @@ inline int BinTree<T>::removeAt(BNPosi(T) x) {
 }
 
 template<typename T>
-inline BinTree<T>* BinTree<T>::secede(BNPosi(T) x) {//删除x处子树，转换为独立子树
+BinTree<T>* BinTree<T>::secede(BNPosi(T) x) {//删除x处子树，转换为独立子树
 	FromParentTo(*x) = NULL;
 	updateHeightAbove(x->parent);
 	Bintree<T>* S = new BinTree<T>;
